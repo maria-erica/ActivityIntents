@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ActivityIntent</string>
+    <string name="textGresya">Gresya</string>
+    <string name="inputUsername">Username</string>
+    <string name="inputPassword">Password</string>
+    <string name="buttonLogin">LOGIN</string>
+    <string name="textNoaccount">No account yet? Create one</string>
+    <string name="buttonSignup">SIGN UP</string>
+    <string name="buttonExplore">EXPLORE</string>
+    <string name="buttonGallery">GALLERY</string>
+    <string name="buttonRestaurant">RESTAURANT</string>
+    <string name="buttonNews">NEWS</string>
+    <string name="buttonFacts">FACTS</string>
+    <string name="buttonBrowse">BROWSE</string>
+    <string name="buttonExploreGresya">EXPLORE GRESYA</string>
+</resources>
