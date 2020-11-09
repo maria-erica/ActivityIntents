@@ -13,4 +13,5 @@
     <string name="buttonFacts">FACTS</string>
     <string name="buttonBrowse">BROWSE</string>
     <string name="buttonExploreGresya">EXPLORE GRESYA</string>
+    <string name="buttonTimer">TIMER</string>
 </resources>

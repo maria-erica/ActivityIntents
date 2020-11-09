@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.provider.AlarmClock
 import android.widget.Button
 import android.widget.Toast
+import java.util.*
 
 class TaskActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,11 +18,11 @@ class TaskActivity : AppCompatActivity() {
         findViewById<Button>(R.id.buttonGallery).setOnClickListener { buttonGallery() }
         findViewById<Button>(R.id.buttonRestaurant).setOnClickListener { buttonRestaurant() }
         findViewById<Button>(R.id.buttonNews).setOnClickListener { buttonNews() }
-        findViewById<Button>(R.id.buttonBrowse).setOnClickListener { buttonBrowse() }
+        findViewById<Button>(R.id.buttonTimer).setOnClickListener { Timer() }
 
     }
      private fun buttonExplore() {
-        val uri = Uri.parse("https://www.greeka.com/about-greece/")
+        val uri = Uri.parse("https://www.lonelyplanet.com/greece/attractions")
         val intent = Intent(Intent.ACTION_VIEW, uri)
         startActivity(intent)
 
@@ -50,5 +51,13 @@ class TaskActivity : AppCompatActivity() {
         startActivity(intent)
 
 
+    }
+    private fun Timer(){
+        val intent = Intent(AlarmClock.ACTION_SHOW_TIMERS)
+        intent.addCategory(Intent.CATEGORY_APP_MESSAGING)
+        if (intent.resolveActivity(packageManager) != null){
+        }else{
+            Toast.makeText(this,"Cannot open TIMER", Toast.LENGTH_SHORT).show()
+        }
     }
 }
